@@ -65,4 +65,20 @@ public class CustomListTest {
         assertEquals(list.getCount(), citySize - 1);
     }
 
+    /**
+     * Gives us the amount of cities we have in the CityList.
+     */
+    @Test
+    public void countCitiesTest(){
+        list = MockCityList();
+        City edmonton = new City("Edmonton", "AB");
+        City vancouver = new City("Vancouver", "BC");
+        City winnipeg = new City("Winnipeg", "MB");
+        list.addCity(edmonton);
+        list.addCity(vancouver);
+        list.addCity(winnipeg);
+
+        // Checks if countCities() returns the correct amount of cities
+        assertEquals(list.getCount(), list.countCities());
+    }
 }
