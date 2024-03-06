@@ -52,18 +52,18 @@ public class CustomListTest {
     /**
      * checks if we deleted the city
      */
-//    @Test
-//    public void deleteCityTest(){
-//        list = MockCityList();
-//        City edmonton = new City("Edmonton", "AB");
-//        list.addCity(edmonton);
-//        int citySize = list.getCount();
-//
-//        list.deleteCity(edmonton);
-//
-//        // Checks if the CityList is the same size as initial (0 items)
-//        assertEquals(list.getCount(), citySize - 1);
-//    }
+    @Test
+    public void deleteCityTest(){
+        list = MockCityList();
+        City edmonton = new City("Edmonton", "AB");
+        list.addCity(edmonton);
+        int citySize = list.getCount();
+
+        list.deleteCity(edmonton);
+
+        // Checks if the CityList is the same size as initial (0 items)
+        assertEquals(list.getCount(), citySize - 1);
+    }
 
     /**
      * Gives us the amount of cities we have in the CityList.
