@@ -63,7 +63,8 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city City object to find in the list
      */
     public boolean hasCity(City city){
-        return cities.contains(city);
+        return false;
+        //return cities.contains(city);
     }
 
     /**
@@ -71,13 +72,14 @@ public class CustomList extends ArrayAdapter<City> {
      * @param city City object to be deleted from the list
      */
     public void deleteCity(City city){
-        cities.remove(city);
+        //cities.remove(city);
     }
 
     /**
      * Returns the amount of cities in the list
      */
     public int countCities(){
-        return cities.size();
+        return 0;
+        //return cities.size();
     }
 }
